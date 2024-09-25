@@ -12,6 +12,9 @@ let package = Package(
             targets: ["OSRMTextInstructions"]
         )
     ],
+    dependencies: [
+        .package(url: "https://github.com/mapbox/mapbox-directions-swift", from: "2.5.0")
+    ],
     targets: [
         .target(
             name: "OSRMTextInstructions",
