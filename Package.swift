@@ -18,6 +18,9 @@ let package = Package(
     targets: [
         .target(
             name: "OSRMTextInstructions",
+            dependencies: [
+                .product(name: "MapboxDirections", package: "mapbox-directions-swift")
+            ],
             path: "OSRMTextInstructions"
         )
     ]
