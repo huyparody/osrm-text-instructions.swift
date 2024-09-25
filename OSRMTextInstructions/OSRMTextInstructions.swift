@@ -1,5 +1,4 @@
 import Foundation
-import MapboxDirections
 
 // Will automatically read localized Instructions.plist
 let OSRMTextInstructionsStrings = NSDictionary(contentsOfFile: Bundle(for: OSRMInstructionFormatter.self).path(forResource: "Instructions", ofType: "plist")!)!
