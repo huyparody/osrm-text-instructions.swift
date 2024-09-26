@@ -2,7 +2,7 @@ import Foundation
 import MapboxDirections
 
 // Will automatically read localized Instructions.plist
-let OSRMTextInstructionsStrings = NSDictionary(contentsOfFile: Bundle(for: OSRMInstructionFormatter.self).path(forResource: "Instructions", ofType: "plist")!)!
+let OSRMTextInstructionsStrings = NSDictionary(contentsOfFile: Bundle.module.path(forResource: "Instructions", ofType: "plist")!)!
 
 protocol Tokenized {
     associatedtype T
@@ -107,7 +107,7 @@ extension NSAttributedString: Tokenized {
     let version: String
     let instructions: [String: Any]
     
-    let ordinalFormatter: NumberFormatter = {
+    public let ordinalFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.locale = .current
         if #available(iOS 9.0, OSX 10.11, *) {
