@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "OSRMTextInstructions",
+    defaultLocalization: "vi", 
     platforms: [
         .iOS(.v12)
     ],
