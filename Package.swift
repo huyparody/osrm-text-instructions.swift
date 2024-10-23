@@ -14,7 +14,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/mapbox/mapbox-directions-swift", from: "2.14.0")
+        .package(url: "https://github.com/mapbox/mapbox-directions-swift", from: "2.5.0")
     ],
     targets: [
         .target(
